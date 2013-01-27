@@ -16,13 +16,13 @@ int main() {
 	cout << Format("null char pointer : {} ") % ptr << endl;
 	
 	auto * test = new int;
-	cout << Format("pointer example : {}") % test << endl;
+	cout << Format("pointer : {}") % test << endl;
 	delete test;
 	test = nullptr;
-	cout << Format("null pointer example : {}") % test << endl;
+	cout << Format("null pointer : {}") % test << endl;
 	
 	auto test2 = make_shared<int>();
-	cout << Format("shared_ptr example : {}") % test2 << endl;
+	cout << Format("shared_ptr : {}") % test2 << endl;
 	
 	return 0;
 }
