@@ -4,6 +4,7 @@
 #include <sstream>
 #include <vector>
 #include <stdexcept>
+#include <memory>
 
 template <typename Arg>
 std::string to_string(Arg arg) {
