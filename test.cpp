@@ -24,6 +24,12 @@ int main() {
 	auto test2 = make_shared<int>();
 	cout << Format("shared_ptr : {}") % test2 << endl;
 	
+	unique_ptr<int> test3(new int);
+	cout << Format("unique_ptr : {}") % test3 << endl;
+
+	weak_ptr<int> test4 = test2;
+	cout << Format("weak_ptr : {}") % test4 << endl;
+
 	return 0;
 }
 
